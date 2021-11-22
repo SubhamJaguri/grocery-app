@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  grocery:
+    container_name: grocery
+    restart: always
+    build: .
+    ports:
+      - '1223:1223'
+    volumes: ['./:/usr/src/app']
